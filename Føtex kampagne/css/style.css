@@ -5,24 +5,36 @@ body{
   box-sizing: border-box;
 }
 
-a{
+.fn > a, .spørgsmål-og-svar > a{
   text-decoration: none;
   color: black;
 }
 
-a:hover{
+.fn >  a:hover, .spørgsmål-og-svar > a:hover{
   text-decoration: underline;
 }
+
+.log-ind > a{
+  text-decoration: none;
+  color: white;
+}
+
 
 iframe{
   border: #004962 solid 10px;
   border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 form{
   background-color:  #004962;
 }
 
+input[type=text], input[type=email]{
+  width: 380px;
+}
 
 .container-1{
   display: flex;
@@ -36,37 +48,63 @@ form{
 .container-3{
   display: flex;
   flex-direction: column;
-  padding: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #C9D8DF;
 }
 
 .container-4{
   display: flex;
-  padding: 80px;
+  flex-direction: row;
+  background-color: #C9D8DF;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 60px;
+}
+
+.container-5{
+  display: flex;
+  padding: 40px;
   flex-direction: row;
   background-color: #004962;
 }
 
+.container-6{
+  display: flex;
+  flex-direction: row;
+  background-color: #004962;
+}
+
+
 .container-1 > div{
   padding-top: 30px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .oplysninger > ul{
   list-style: none;
   color: white;
-  line-height: 2em;
+  line-height: 2.2em;
   font-family: Futura book, arial, sans-serif;
+  margin-left: 50px;
 }
 
 
 .ydligere-info > ul{
   list-style: none;
-  line-height: 2em;
+  line-height: 2.2em;
   color: white;
-  margin-left: 50px;
+  margin-left: 150px;
 }
+
+.ydligere-info > ul > li > b > a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .fn{
     margin-left: auto;
@@ -79,7 +117,58 @@ form{
   margin-left: 20px;
 }
 
-.brødtekst > p{
+.brødtekst-1 > p, .brødtekst-2 > p, .brødtekst-3 > p{
   font-family: Futura book, arial, sans-serif;
   width: 85%;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+.foetex-logo{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.salling-group-logo{
+  margin-left: 20px;
+}
+
+.kontaktformular > form{
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Futura book, arial, sans-serif;
+}
+
+.beskrivelse{
+  width: 400px;
+}
+
+.video{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.titel-1{
+  font-size: 1.75em;
+}
+
+.titel-2{
+  margin-top: 20px;
+}
+
+.brødtekst-3{
+  width: 58%;
+
+}
+
+.brødtekst-3 > p{
+  padding: 10px;
+  margin:0;
+}
+
+.brødtekst-2 > p{
+  font-family: Futura, arial, sans-serif;
 }
