@@ -1,63 +1,85 @@
 body{
   margin: 0;
+  padding: 0;
   font-family: Futura, arial, sans-serif;
+  box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+iframe{
+  border: #004962 solid 10px;
+  border-radius: 15px;
+}
+
+form{
+  background-color:  #004962;
+}
+
 
 .container-1{
   display: flex;
-  flex-direction: row;
+  padding: 10px;
 }
 
 .container-2{
   display: flex;
+}
+
+.container-3{
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  background-color: #C9D8DF;
+}
+
+.container-4{
+  display: flex;
+  padding: 80px;
   flex-direction: row;
+  background-color: #004962;
 }
 
-.container-1 div{
-  /* border: black solid 2px; */
+.container-1 > div{
+  padding-top: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-.box-1{
-
-  flex-basis: 55%;
-}
-
-.box-2{
-
-  flex-basis: 25%
-}
-
-.box-3{
-  flex-basis: 20%
-}
-
-.box-4{
-  flex-basis: 100%
-}
-
-.list-1 {
+.oplysninger > ul{
   list-style: none;
-  display: inline;
-  margin-left: 10px;
+  color: white;
+  line-height: 2em;
+  font-family: Futura book, arial, sans-serif;
 }
 
-ul {
-  margin-top: 30px;
-  padding-left: 0px;
+
+.ydligere-info > ul{
+  list-style: none;
+  line-height: 2em;
+  color: white;
+  margin-left: 50px;
 }
 
-#foetex-logo{
-  margin-left: 10px;
-  margin-top: 4px;
+.fn{
+    margin-left: auto;
 }
 
-#foetex-banner{
-  width: 100%;
+.log-ind{
+  background-color: #004962;
+  border-radius: 30px;
+  color: white;
+  margin-left: 20px;
 }
 
-#log-ind{
- margin-top: 30px;
- background-color: #004962;
- color: white;
- margin-left: 0;
+.brødtekst > p{
+  font-family: Futura book, arial, sans-serif;
+  width: 85%;
 }
